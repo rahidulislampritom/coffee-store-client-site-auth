@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -29,7 +28,7 @@ const UpdateCoffee = () => {
         form.reset();
 
         // send data to the server 
-        fetch(`http://localhost:1000/coffee/${_id}`, {
+        fetch(`https://coffee-store-server-five-mu.vercel.app/coffee/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

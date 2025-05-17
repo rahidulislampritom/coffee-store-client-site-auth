@@ -23,7 +23,7 @@ const SignIn = () => {
                     email,
                     lastSignInTime
                 }
-                fetch('http://localhost:1000/users', {
+                fetch('https://coffee-store-server-five-mu.vercel.app/users', {
                     method: 'PATCH',
                     headers: {
                         'content-type': 'application/json'
@@ -65,7 +65,7 @@ const SignIn = () => {
                                     <button className="btn btn-neutral mt-4">Signin</button>
                                 </fieldset>
                             </form>
-                            <h2>Don't have an Account?
+                            <h2>Don't have an Account? Please
                                 <Link to={'/signup'}>
                                     <button className='btn btn-link'>SignUp</button>
                                 </Link>
